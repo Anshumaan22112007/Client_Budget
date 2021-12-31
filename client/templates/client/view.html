@@ -1,0 +1,29 @@
+{% extends "client/layout.html" %}
+{% block body %}
+
+
+<table class="table table-primary">
+<div style="margin-left: 10px">
+<tr>
+    <th>Client Name</th>
+    <th>Project Name</th>
+    <th>Budget</th>
+
+
+
+</tr>
+
+{% for client in clientlist %}
+            <tr>
+
+                <td>{{ client.client_name }}</td>
+                <td>{{ client.project_name }}</td>
+                <td>{{ client.budget }}</td>
+
+
+        {% endfor %}
+
+</div>
+</table>
+
+{% endblock %}

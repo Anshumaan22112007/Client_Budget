@@ -1,0 +1,28 @@
+
+{% extends "client/layout.html" %}
+
+{% block body %}
+    <center>
+<div style="margin-top: 50px">
+<div class="card" style="width: 18rem;">
+
+  <div class="card-body">
+    <h5 class="card-title">ADD</h5>
+    <p class="card-text">Here You Can Your Details About Project.<p>
+    <a href="{% url 'add' %}" class="btn btn-outline-success">GO</a>
+  </div>
+</div>
+
+    <br> <br>
+
+<div class="card" style="width: 18rem;">
+
+  <div class="card-body">
+    <h5 class="card-title">VIEW</h5>
+    <p class="card-text">Here You Can Your See Details About Project.<p>
+    <a href="{% url 'view' %}" class="btn btn-outline-success">GO</a>
+  </div>
+</div>
+</div>
+    </center>
+{% endblock %}
